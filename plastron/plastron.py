@@ -1,5 +1,5 @@
 import os, shutil
-import mnode, inode, screen
+from . import mnode, inode, screen
 from art import *
 
 #: Created by Kavun Nuggihalli

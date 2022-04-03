@@ -1,5 +1,6 @@
+"""Install packages as defined in this file into the Python environment."""
 import pathlib
-from setuptools import setup
+from setuptools import setup, find_namespace_packages, find_packages
 
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
@@ -7,23 +8,33 @@ HERE = pathlib.Path(__file__).parent
 # The text of the README file
 README = (HERE / "README.md").read_text()
 
-# This call to setup() does all the work
 setup(
     name="plastron",
-    version="1.0.1",
+    packages=['plastron'],
     description="An interactive shell library",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/kavunnuggihalli/Plastron",
     author="Kavun Nuggihalli",
     author_email="kavunnuggihalli@gmail.com",
-    license="MIT",
-    classifiers=[
-        "License :: OSI Approved :: MIT License",
-        "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.7",
+    url="https://github.com/kavunnuggihalli/Plastron",
+    keywords="python3 interactive shell library",
+    project_urls={
+        'Webpage': 'https://kavunnuggihalli.com/plastron/',
+        'Source': 'https://github.com/kavunnuggihalli/Plastron',
+    },
+    python_requires='>=3.0',
+    version="1.0.5",
+    install_requires=[
+        "setuptools",
+        "art",
     ],
-    packages=["plastron"],
-    include_package_data=True,
-    install_requires=["art"],
+    classifiers=[
+        "Programming Language :: Python :: 3.0",
+        "Topic :: Utilities",
+        "Development Status :: 5 - Production/Stable",
+        "Programming Language :: Python :: 3.7",
+        "Topic :: System :: Shells",
+        "Topic :: System :: System Shells",
+    ],
+    include_package_data=True
 )
