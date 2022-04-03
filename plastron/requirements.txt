@@ -1,0 +1,7 @@
+art==5.4
+importlib-metadata==4.11.1
+Mako==1.1.6
+Markdown==3.3.6
+MarkupSafe==2.1.0
+pdoc3==0.10.0
+zipp==3.7.0

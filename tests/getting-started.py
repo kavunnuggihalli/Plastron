@@ -1,17 +1,6 @@
-#  Plastron
-An interactive shell application  [Learn More](https://kavunnuggihalli.com/plastron/)
-Build interactive, menu driven, shell programs using Python 3+
-
-##  Getting started
-The easiest way to get started with Plastron is to install the library from pip.
-
- 1. `Create a file: shell.py`
- 2. `pip install plastron`
- 3. `from plastron import Plastron`
-
-Here is sample code for a shell program with one menu to check disk space on the machine.
-
-```
+#: Created by Kavun Nuggihalli
+#: Email: kavunnuggihalli@gmail.com
+#: Website: https://kavunnuggihalli.com
 # An import we need
 import os
 
@@ -42,7 +31,3 @@ my_shell.menus['main'].add_item(metrics_menu)
 
 # Launch the shell
 my_shell.shell()
-```
-Now run `python shell.py`  you should see something like this:
-
-<img src="https://kavunnuggihalli.com/wp-content/uploads/2022/04/plastron-use-item.png" alt="" width="100%" height="100%" style="float: left; padding-right: 20px;" />
